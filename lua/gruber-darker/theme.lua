@@ -114,7 +114,7 @@ local highlight_groups = {
   DiffDelete                  = { fg = diff.delete_fg, bg = diff.delete_bg },
   DiffRemoved                 = { fg = diff.removed_fg, diff.removed_bg },
   DiffChange                  = { fg = diff.change_fg, bg = diff.change_bg },
-  DiffText                    = { fg = diff.text_fg, bg = diff.text_bg, em = "bold" },
+  DiffText                    = { fg = diff.text_fg, bg = diff.text_bg, bold = true },
   DiffLine                    = { fg = diff.line_fg },
   -- Telescope
   TelescopeSelection          = { bg = telescope.selection_bg },
