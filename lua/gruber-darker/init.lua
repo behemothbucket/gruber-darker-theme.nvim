@@ -4,7 +4,7 @@ local p = require('gruber-darker.palette')
 
 local highlight_groups = {
   --Main
-  Normal                     = {fg = p.gruber_darker_fg, bg = p.gruber_darker_bg },
+  Normal                     = { fg = p.gruber_darker_fg, bg = p.gruber_darker_bg },
   NormalNC                   = { link = "Normal" },
   MsgArea                    = { fg = p.gruber_darker_grey_custom, bg = p.gruber_darker_bg },
   NormalFloat                = { link = "Normal" },
@@ -36,7 +36,7 @@ local highlight_groups = {
   TabLineSel                 = { fg = "NONE", bg = "NONE" },
   Pmenu                      = { link = "Normal" },
   PmenuSel                   = { bg = p.gruber_darker_niagara_m2 },
-  PmenuThumb                 = { bg = p.gruber_darker_bg_p2 },
+  PmenuThumb                 = { bg = p.gruber_darker_quartz },
   PmenuSbar                  = { bg = p.gruber_darker_bg_p1 },
   Conceal                    = { link = "Operator" },
   Title                      = { link = "Normal" },
