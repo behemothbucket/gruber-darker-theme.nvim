@@ -1,4 +1,6 @@
-local main = {
+local palette = {}
+
+palette.main = {
   gruber_darker_fg          = "#e4e4ef",
   gruber_darker_fg_1        = "#f4f4ff",
   gruber_darker_fg_2        = "#f5f5f5",
@@ -24,7 +26,7 @@ local main = {
   gruber_darker_grey_custom = "#7a7a7a",
 }
 
-local text = {
+palette.text = {
   todo_fg = "#4ba8ff",
   todo_bg = "#0b1e33",
   note_fg = "#ff57fF",
@@ -33,58 +35,51 @@ local text = {
   warning_bg = "#392a13",
   danger_fg = "#ff8b64",
   danger_bg = "#391a13",
-  uri_fg = main.gruber_darker_niagara,
-  uri_bg = "NONE",
+  uri_fg = palette.main.gruber_darker_niagara,
+  uri_bg = "",
 }
 
-local diff = {
-  add_fg = "NONE",
+palette.diff = {
+  add_fg = "",
   add_bg = "#0a2517",
   added_fg = "#369432",
-  added_bg = "NONE",
-  change_fg = "NONE",
-  change_bg = text.warning_bg,
+  added_bg = "",
+  change_fg = "",
+  change_bg = palette.text.warning_bg,
   changed_fg = "#afa100",
-  changed_bg = "NONE",
-  delete_fg = "NONE",
-  delete_bg = text.danger_bg,
+  changed_bg = "",
+  delete_fg = "",
+  delete_bg = palette.text.danger_bg,
   removed_fg = "#960019",
-  removef_bg = "NONE",
-  text_fg = text.diff_added_fg,
-  text_bg = text.diff_added_bg,
-  line_fg = main.gruber_darker_quartz,
+  removef_bg = "",
+  text_fg = palette.text.diff_added_fg,
+  text_bg = palette.text.diff_added_bg,
+  line_fg = palette.main.gruber_darker_quartz,
 }
 
-local diagnostic = {
-  error_fg = main.gruber_darker_red,
-  error_bg = "NONE",
-  warn_fg = main.gruber_darker_yellow,
-  warn_bg = "NONE",
-  hint_fg = "#7a7a7a",
-  hint_bg = "NONE",
-  info_fg = text.todo_fg,
-  info_bg = "NONE",
+palette.diagnostic = {
+  error_fg = palette.main.gruber_darker_red,
+  error_bg = "",
+  warn_fg = palette.main.gruber_darker_yellow,
+  warn_bg = "",
+  hint_fg = palette.main.gruber_darker_grey_custom,
+  hint_bg = "",
+  info_fg = palette.text.todo_fg,
+  info_bg = "",
 }
 
-local git = {
-  sign_add_fg = main.gruber_darker_green,
-  sign_add_bg = "NONE",
-  sign_change_fg = main.gruber_darker_yellow,
-  sign_change_bg = "NONE",
-  sign_delete_fg = main.gruber_darker_red,
-  sign_delete_bg = "NONE",
+palette.git = {
+  sign_add_fg = palette.main.gruber_darker_green,
+  sign_add_bg = "",
+  sign_change_fg = palette.main.gruber_darker_yellow,
+  sign_change_bg = "",
+  sign_delete_fg = palette.main.gruber_darker_red,
+  sign_delete_bg = "",
 }
 
-local telescope = {
+palette.telescope = {
   selection_bg = "#262626",
-  matching_fg = main.gruber_darker_white,
+  matching_fg = palette.main.gruber_darker_white,
 }
 
-return {
-  main,
-  text,
-  diff,
-  diagnostic,
-  git,
-  telescope,
-}
+return palette

@@ -1,13 +1,17 @@
-local M = {}
-local palette = require("palette")
-local main, text, diff, diagnostic, git, telescope = table.unpack(palette)
+local palette = require('gruber-darker.palette')
+local main = palette.main
+local text = palette.text
+local diff = palette.diff
+local diagnostic = palette.diagnostic
+local git = palette.git
+local telescope = palette.telescope
 
-local highlight_colors = {
+local highlight_groups = {
   --Main
   Normal                      = { bg = main.gruber_darker_bg, fg = main.gruber_darker_fg },
-  Bold                        = { em = 'bold' },
-  Italic                      = { em = 'italic' },
-  Underlined                  = { em = 'underline' },
+  Bold                        = { bold = true },
+  Italic                      = { italic = true },
+  -- Underlined                  = { underline = true },
   Visual                      = { bg = main.gruber_darker_bg_p3, fg = main.gruber_darker_fg },
   Directory                   = { fg = main.gruber_darker_quartz, bold = true },
   IncSearch                   = { fg = main.gruber_darker_fg_1, bg = main.gruber_darker_niagara_m1 },
@@ -44,10 +48,10 @@ local highlight_colors = {
   Error                       = { fg = main.gruber_darker_red },
   ErrorMsg                    = { link = "Error" },
   -- Spelling
-  SpellBad                    = { em = 'underline' },
-  SpellLocal                  = { em = 'underline' },
-  SpellCap                    = { em = 'underline' },
-  SpellRare                   = { em = 'underline' },
+  SpellBad                    = { underline = true },
+  SpellLocal                  = { underline = true },
+  SpellCap                    = { underline = true },
+  SpellRare                   = { underline = true },
   -- Syntax
   Boolean                     = { link = "String" },
   Character                   = { link = "Normal" },
@@ -78,66 +82,6 @@ local highlight_colors = {
   Todo                        = { fg = text.todo_fg, bg = text.todo_bg },
   Type                        = { fg = main.gruber_darker_quartz },
   Typedef                     = { link = "Type" },
-  -- TreeSitter
-  TSAnnotation                = { fg = main.gruber_darker_grey_fg, italic = true },
-  TSAttribute                 = { fg = main.gruber_darker_grey_fg },
-  TSBoolean                   = { link = "Boolean" },
-  TSCharacter                 = { link = "Character" },
-  TSCharacterSpecial          = { link = "SpecialChar" },
-  TSComment                   = { link = "Comment" },
-  TSConditional               = { link = "Conditional" },
-  TSConstant                  = { link = "Constant" },
-  TSConstBuiltin              = { link = "Special" },
-  TSConstMacro                = { link = "Define" },
-  TSConstructor               = { link = "Function" },
-  TSDebug                     = { link = "Special" },
-  TSDefine                    = { link = "Define" },
-  TSError                     = { link = "Error" },
-  TSException                 = { link = "Exception" },
-  TSField                     = { link = "Identifier" },
-  TSFloat                     = { link = "Identifier" },
-  TSFunction                  = { link = "Function" },
-  TSFuncBuiltin               = { link = "Keyword" },
-  TSFuncMacro                 = { link = "PreProc" },
-  TSInclude                   = { link = "Include" },
-  TSKeyword                   = { link = "Keyword" },
-  TSKeywordFunction           = { link = "Function" },
-  TSKeywordOperator           = { link = "Function" },
-  TSKeywordReturn             = { link = "Special" },
-  TSLabel                     = { link = "Label" },
-  TSMethod                    = { link = "Identifier" },
-  TSNamespace                 = { fg = main.gruber_darker_grey_custom },
-  TSNone                      = { link = "Normal" },
-  TSNumber                    = { link = "Number" },
-  TSOperator                  = { link = "Operator" },
-  TSParameter                 = { link = "Identifier" },
-  TSParameterReference        = { fg = main.gruber_darker_grey_custom },
-  TSPreProc                   = { link = "PreProc" },
-  TSProperty                  = { link = "Identifier" },
-  TSPunctDelimiter            = { fg = main.gruber_darker_grey_custom },
-  TSPunctBracket              = { fg = main.gruber_darker_grey_custom },
-  TSPunctSpecial              = { fg = main.gruber_darker_grey_custom },
-  TSRepeat                    = { link = "Keyword" },
-  TSStorageClass              = { link = "Keyword" },
-  TSString                    = { link = "String" },
-  TSStringRegex               = { link = "Comment" },
-  TSStringEscape              = { link = "Comment" },
-  TSStringSpecial             = { link = "Comment" },
-  TSSymbol                    = { link = "Identifier" },
-  TSTag                       = { link = "Tag" },
-  TSTagAttribute              = { fg = main.gruber_darker_grey_custom },
-  TSTagDelimiter              = { fg = main.gruber_darker_grey_custom },
-  TSText                      = { link = "Normal" },
-  TSStrong                    = { em = 'bold' },
-  TSEmphasis                  = { em = 'italic' },
-  TSUnderline                 = { em = 'underline' },
-  TSStrike                    = { em = 'strikethrough' },
-  TSTitle                     = { link = "Title" },
-  TSLiteral                   = { link = "Variable" },
-  TSMath                      = { fg = main.gruber_darker_quartz },
-  TSTextReference             = { fg = main.gruber_darker_quartz },
-  TSEnvironment               = { fg = main.gruber_darker_quartz },
-  TSEnvironmentName           = { fg = main.gruber_darker_quartz },
   ["@text.todo"]              = { fg = "#4BA8FF", bg = "#0b1e33" },
   ["@text.note"]              = { fg = "#FF57FF", bg = "#1b0e23" },
   ["@text.warning"]           = { fg = "#FF9900", bg = "#392a13" },
@@ -147,17 +91,6 @@ local highlight_colors = {
   ["@checked_list_item"]      = { fg = main.gruber_darker_grey_custom, strikethrough = true },
   ["@text.todo.unchecked"]    = { link = "@unchecked_list_item" },
   ["@text.todo.checked"]      = { link = "@checked_list_item" },
-  TSTodo                      = { link = "@text.todo" },
-  TSNote                      = { link = "@text.note" },
-  TSWarning                   = { link = "@text.warn" },
-  TSDanger                    = { link = "@text.danger" },
-  TSURI                       = { fg = main.gruber_darker_quartz, underline = true },
-  TSType                      = { link = "Type" },
-  TSTypeBuiltin               = { link = "Keyword" },
-  TSTypeQualifier             = { fg = main.gruber_darker_grey_custom, italic = true },
-  TSTypeDefinition            = { link = "Typedef" },
-  TSVariable                  = { link = "Variable" },
-  TSVariableBuiltin           = { link = "Keyword" },
   ["@keyword"]                = { link = "Keyword" },
   ["@function"]               = { link = "Function" },
   ["@method"]                 = { link = "Function" },
@@ -187,6 +120,19 @@ local highlight_colors = {
   TelescopeSelection          = { bg = telescope.selection_bg },
   TelescopeSelectionSelection = { link = "TelescopeSelection" },
   TelescopeMatching           = { fg = telescope.matching_fg, bold = true },
+  --Git
+  GitSignsAdd                 = { fg = git.sign_add.fg, bg = git.sign_add_bg },
+  GitSignsChange              = { fg = git.sign_change_fg, bg = git.sign_change_bg },
+  GitSignsDelete              = { fg = git.sign_delete_fg, bg = git.sign_delete_bg },
+  --Diagnostic
+  DiagnosticSignError         = { fg = diagnostic.error_fg, bg = diagnostic.error_bg },
+  DiagnosticSignWarn          = { fg = diagnostic.warn_fg, bg = diagnostic.warn_bg },
+  DiagnosticSignHint          = { fg = diagnostic.hint_fg, bg = diagnostic.hint_bg },
+  DiagnosticSignInfo          = { fg = diagnostic.info_fg, bg = diagnostic.info_fg },
+  DiagnosticError             = { link = "DiagnosticSignError" },
+  DiagnosticWarn              = { link = "DiagnosticSignWarn" },
+  DiagnosticHint              = { link = "DiagnosticSignHint" },
+  DiagnosticInfo              = { link = "DiagnosticSignInfo" },
   --TODO Languages
   -- vim.api.nvim_set_hl(0, "@css.property_name", { fg = Gray_color })
   -- vim.api.nvim_set_hl(0, "@c.primitive_type", { link = "@type" })
@@ -200,10 +146,4 @@ local highlight_colors = {
   MasonHeader                 = { link = "StatusLine" },
 }
 
-function M.setup()
-  local hi = vim.api.nvim_set_hl
-
-  for name, style in pairs(highlight_colors) do hi(0, name, style) end
-end
-
-return M
+return highlight_groups
