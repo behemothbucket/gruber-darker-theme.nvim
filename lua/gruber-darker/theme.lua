@@ -1,4 +1,4 @@
-local palette = require('gruber-darker.palette')
+local palette = require('palette')
 local main = palette.main
 local text = palette.text
 local diff = palette.diff
@@ -121,7 +121,7 @@ local highlight_groups = {
   TelescopeSelectionSelection = { link = "TelescopeSelection" },
   TelescopeMatching           = { fg = telescope.matching_fg, bold = true },
   --Git
-  GitSignsAdd                 = { fg = git.sign_add.fg, bg = git.sign_add_bg },
+  GitSignsAdd                 = { fg = git.sign_add_fg, bg = git.sign_add_bg },
   GitSignsChange              = { fg = git.sign_change_fg, bg = git.sign_change_bg },
   GitSignsDelete              = { fg = git.sign_delete_fg, bg = git.sign_delete_bg },
   --Diagnostic

@@ -1,6 +1,6 @@
 # gruber-darker-theme.nvim
 Emacs theme port
-Original theme: ![rexim gruber-darker-theme](https://github.com/rexim/gruber-darker-theme)
+Original theme: https://github.com/rexim/gruber-darker-theme)
 
 ## Screenshots
 
