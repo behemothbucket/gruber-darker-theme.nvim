@@ -25,7 +25,6 @@ local highlight_groups = {
   CursorLine                 = { fg = "NONE", bg = "NONE" },
   CursorLineNr               = { fg = p.gruber_darker_yellow, bg = p.gruber_darker_bg },
   StatusLine                 = { fg = p.gruber_darker_quartz, bg = p.gruber_darker_bg_p1 },
-  StatusLineNC               = { link = "StatusLine" },
   WinSeparator               = { fg = p.gruber_darker_grey_custom, bg = "NONE" },
   SignColumn                 = { bg = p.gruber_darker_bg },
   Colorcolumn                = { link = "StatusLine" },

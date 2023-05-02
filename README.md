@@ -15,6 +15,10 @@ Theme is not fully completed.
 
 ![Lua](https://i.ibb.co/bB66HsV/image.png)
 
+## Bash (Linux, yellow keywords are bold)
+
+![Bash](https://i.ibb.co/JcxNMs5/image.png)
+
 Font: Iosevka
 
 ## Installation
