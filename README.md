@@ -1,5 +1,5 @@
 # gruber-darker-theme.nvim
-Emacs theme port
+Emacs theme port <br>
 
 Original theme: https://github.com/rexim/gruber-darker-theme)
 

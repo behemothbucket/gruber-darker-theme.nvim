@@ -1,4 +1,4 @@
-local p = require('palette')
+local p = require('gruber-darker.palette')
 
 local highlight_groups = {
   --Main
