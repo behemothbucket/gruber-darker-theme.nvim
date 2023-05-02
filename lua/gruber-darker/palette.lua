@@ -33,9 +33,7 @@ local palette = {
   note_fg                        = "#ff57fF",
   note_bg                        = "#1b0e23",
   warning_fg                     = "#ff9900",
-  warning_bg                     = "#392a13",
   danger_fg                      = "#ff8b64",
-  danger_bg                      = "#391a13",
 }
 
 return palette
