@@ -1,11 +1,21 @@
 # gruber-darker-theme.nvim
-Inspired by gruber-darker-theme by *rexim*
+Inspired by gruber-darker-theme by **rexim**
 
 Original theme: https://github.com/rexim/gruber-darker-theme)
 
+Theme is not fully completed.
+
 ## Screenshots
 
-Will be soon...
+### JavaScript (Windows Teminal, without Bold font)
+
+![JavaScript](https://i.ibb.co/fxpSFXp/javascript.png)
+
+### Lua (Windows Terminal, without Bold font)
+
+![Lua](https://i.ibb.co/bB66HsV/image.png)
+
+Font: Iosevka
 
 ## Installation
 
@@ -18,10 +28,4 @@ use {
         require('gruber-darker').setup()
     end
 }
-```
-
-or
-
-```vim
-colorscheme gruber-darker
 ```
