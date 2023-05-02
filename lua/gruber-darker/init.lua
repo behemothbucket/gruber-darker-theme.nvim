@@ -52,7 +52,7 @@ local highlight_groups = {
   -- Syntax
   Boolean                    = { link = "String" },
   Character                  = { link = "Normal" },
-  Comment                    = { fg = p.gruber_darker_grey_custom, italic = true },
+  Comment                    = { fg = p.gruber_darker_grey_custom },
   Conditional                = { link = "Keyword" },
   Constant                   = { link = "Type" },
   Define                     = { link = "Keyword" },
