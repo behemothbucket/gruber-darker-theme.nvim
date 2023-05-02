@@ -1,6 +1,4 @@
-local palette = {}
-
-palette.main = {
+local palette = {
   gruber_darker_fg               = "#e4e4ef",
   gruber_darker_fg_1             = "#f4f4ff",
   gruber_darker_fg_2             = "#f5f5f5",

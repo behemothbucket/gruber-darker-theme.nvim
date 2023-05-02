@@ -143,14 +143,14 @@ local highlight_groups = {
 }
 
 function M.setup()
-  -- vim.cmd('hi clear')
-  --
-  -- vim.o.background = 'dark'
-  -- if vim.fn.exists('syntax_on') then
-  --   vim.cmd('syntax reset')
-  -- end
-  --
-  -- vim.o.termguicolors = true
+  vim.cmd('hi clear')
+
+  vim.o.background = 'dark'
+  if vim.fn.exists('syntax_on') then
+    vim.cmd('syntax reset')
+  end
+
+  vim.o.termguicolors = true
   vim.g.colors_name = 'gruber-darker'
 
   local hi = vim.api.nvim_set_hl
