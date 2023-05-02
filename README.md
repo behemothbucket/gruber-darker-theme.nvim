@@ -1,5 +1,6 @@
 # gruber-darker-theme.nvim
 Emacs theme port
+
 Original theme: https://github.com/rexim/gruber-darker-theme)
 
 ## Screenshots
@@ -12,7 +13,7 @@ Packer:
 
 ```lua
 use {
-    'mxrzv/gruber-darker.nvim',
+    'behemothbucket/gruber-darker-theme.nvim',
     config = function()
         require('gruber-darker').setup()
     end
