@@ -4,7 +4,10 @@ local p = require('gruber-darker.palette')
 
 local highlight_groups = {
   --Main
-  Normal                     = { bg = p.gruber_darker_bg, fg = p.gruber_darker_fg },
+  Normal                     = {fg = p.gruber_darker_fg, bg = p.gruber_darker_bg },
+  NormalNC                   = { link = "Normal" },
+  MsgArea                    = { fg = p.gruber_darker_grey_custom, bg = p.gruber_darker_bg },
+  NormalFloat                = { link = "Normal" },
   Bold                       = { bold = true },
   Italic                     = { italic = true },
   Underlined                 = { underline = true },
@@ -34,7 +37,7 @@ local highlight_groups = {
   Pmenu                      = { link = "Normal" },
   PmenuSel                   = { bg = p.gruber_darker_niagara_m2 },
   PmenuThumb                 = { bg = p.gruber_darker_bg_p3 },
-  PmenuSbar                  = { link = "PmenuThumb" },
+  PmenuSbar                  = { bg = p.gruber_darker_bg_p2 },
   Conceal                    = { link = "Operator" },
   Title                      = { link = "Normal" },
   Question                   = { link = "Normal" },
@@ -117,7 +120,7 @@ local highlight_groups = {
   TelescopeSelectionCaret    = { link = "TelescopeSelection" },
   TelescopeMatching          = { fg = p.gruber_darker_white, bold = true },
   --Git
-  GitSignsAdd                = { fg = p.gruber_darker_green_green, bg = "NONE" },
+  GitSignsAdd                = { fg = p.gruber_darker_green, bg = "NONE" },
   GitSignsChange             = { fg = p.gruber_darker_yellow, bg = "NONE" },
   GitSignsDelete             = { fg = p.gruber_darker_red, bg = "NONE" },
   --Diagnostic
