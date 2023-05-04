@@ -21,7 +21,7 @@ local highlight_groups = {
   MoreMsg                    = { link = "Normal" },
   WarningMsg                 = { fg = p.gruber_darker_yellow },
   FloatBorder                = { fg = p.gruber_darker_grey_custom, bg = "NONE" },
-  NonText                    = { link = "Normal" },
+  NonText                    = { fg = p.grey, bg = p.gruber_darker_bg },
   LineNr                     = { bg = p.gruber_darker_bg, fg = p.gruber_darker_grey_custom },
   LineNrAbove                = { link = "LineNr" },
   LineNrBelow                = { link = "LineNr" },
