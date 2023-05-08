@@ -136,6 +136,7 @@ local highlight_groups = {
   ["@css.property_name"]     = { fg = p.gruber_darker_quartz },
   ["@c.primitive_type"]      = { link = "@type" },
   ["@c.function_identifier"] = { link = "@variable" },
+  ["@js.template_string"]    = { link = "@variable" },
   --Scheme icon
   DevIconScheme              = { fg = p.gruber_darker_red },
   --Oil
