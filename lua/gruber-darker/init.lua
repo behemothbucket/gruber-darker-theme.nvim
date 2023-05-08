@@ -77,6 +77,7 @@ local highlight_groups = {
   StorageClass               = { link = "Keyword" },
   String                     = { fg = p.gruber_darker_green },
   Structure                  = { link = "Type" },
+  Variable                   = { fg = p.gruber_darker_fg_1 },
   Tag                        = { link = "SpecialChar" },
   Todo                       = { fg = p.todo_fg, bg = p.todo_bg },
   Type                       = { fg = p.gruber_darker_quartz },
