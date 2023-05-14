@@ -1,7 +1,7 @@
 # gruber-darker-theme.nvim
 Inspired by gruber-darker-theme by **rexim**
 
-Original theme: https://github.com/rexim/gruber-darker-theme)
+Original theme: https://github.com/rexim/gruber-darker-theme
 
 Theme is not fully completed.
 
