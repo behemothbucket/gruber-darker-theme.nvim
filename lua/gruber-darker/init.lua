@@ -127,7 +127,7 @@ local highlight_groups = {
   --Diagnostic
   DiagnosticSignError        = { fg = p.gruber_darker_red_custom, bg = "NONE" },
   DiagnosticSignWarn         = { fg = p.gruber_darker_yellow, bg = "NONE" },
-  DiagnosticSignHint         = { fg = p.gruber_darker_grey_custom, bg = "NONE" },
+  DiagnosticSignHint         = { fg = p.gruber_darker_bg_p3, bg = "NONE" },
   DiagnosticSignInfo         = { fg = p.todo_fg, bg = "NONE" },
   DiagnosticError            = { link = "DiagnosticSignError" },
   DiagnosticWarn             = { link = "DiagnosticSignWarn" },
