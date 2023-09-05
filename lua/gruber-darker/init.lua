@@ -52,7 +52,7 @@ local highlight_groups = {
   SpellCap                   = { underline = true },
   SpellRare                  = { underline = true },
   -- Syntax
-  Boolean                    = { fg = p.gruber_darker_grey_custom },
+  Boolean                    = { link = "MsgArea" },
   Character                  = { link = "String" },
   Comment                    = { fg = p.gruber_darker_grey_custom },
   Conditional                = { link = "Keyword" },
