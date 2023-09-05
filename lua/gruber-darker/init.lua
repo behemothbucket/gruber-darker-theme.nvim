@@ -145,9 +145,9 @@ local highlight_groups = {
   --Mason
   MasonHeader                = { link = "StatusLine" },
   --Illuminate
-  IlluminatedWordText        = { guibg = p.gruber_darker_bg_p1, gui = "NONE" },
-  IlluminatedWordRead        = { guibg = p.gruber_darker_bg_p1, gui = "NONE" },
-  IlluminatedWordWrite       = { guibg = p.gruber_darker_bg_p1, gui = "NONE" },
+  IlluminatedWordText        = { bg = p.gruber_darker_bg_p1, gui = "NONE" },
+  IlluminatedWordRead        = { bg = p.gruber_darker_bg_p1, gui = "NONE" },
+  IlluminatedWordWrite       = { bg = p.gruber_darker_bg_p1, gui = "NONE" },
 }
 
 function M.setup()
