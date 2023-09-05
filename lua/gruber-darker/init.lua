@@ -61,7 +61,7 @@ local highlight_groups = {
   Delimiter                  = { fg = p.gruber_darker_grey_custom },
   Float                      = { link = "Number" },
   Function                   = { fg = p.gruber_darker_niagara },
-  Identifier                 = { fg = p.gruber_darker_fg_1 }
+  Identifier                 = { fg = p.gruber_darker_fg_1 },
   Include                    = { link = "PreProc" },
   Keyword                    = { fg = p.gruber_darker_yellow, bold = true },
   Label                      = { link = "String" },
