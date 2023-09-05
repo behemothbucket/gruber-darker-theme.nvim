@@ -31,8 +31,8 @@ local highlight_groups = {
   WinSeparator               = { fg = p.gruber_darker_grey_custom, bg = "NONE" },
   SignColumn                 = { bg = p.gruber_darker_bg },
   Colorcolumn                = { link = "StatusLine" },
-  TabLineFill                = { fg = "NONE", bg = "NONE" },
-  TabLine                    = { fg = p.gruber_darker_bg_p3, bg = "NONE" },
+  TabLineFill                = { fg = p.gruber_darker_bg_p3, bg = "NONE" },
+  TabLine                    = { fg = p.grber_darker_bg_p3, bg = "NONE" },
   TabLineSel                 = { fg = p.gruber_darker_quartz, bg = p.gruber_darker_bg_p1 },
   Pmenu                      = { link = "Normal" },
   PmenuSel                   = { bg = p.gruber_darker_bg_p3 },
@@ -52,7 +52,7 @@ local highlight_groups = {
   SpellCap                   = { underline = true },
   SpellRare                  = { underline = true },
   -- Syntax
-  Boolean                    = { fg = p.gruber_darker_niagara_m2 },
+  Boolean                    = { fg = "Normal" },
   Character                  = { link = "String" },
   Comment                    = { fg = p.gruber_darker_grey_custom },
   Conditional                = { link = "Keyword" },
@@ -61,7 +61,7 @@ local highlight_groups = {
   Delimiter                  = { fg = p.gruber_darker_grey_custom },
   Float                      = { link = "Number" },
   Function                   = { fg = p.gruber_darker_niagara },
-  Identifier                 = { fg = p.gruber_darker_fg_1 },
+  Identifier                 = { fg = p.gruber_darker_fg_1 }
   Include                    = { link = "PreProc" },
   Keyword                    = { fg = p.gruber_darker_yellow, bold = true },
   Label                      = { link = "String" },
