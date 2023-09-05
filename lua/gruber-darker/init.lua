@@ -32,7 +32,7 @@ local highlight_groups = {
   SignColumn                 = { bg = p.gruber_darker_bg },
   Colorcolumn                = { link = "StatusLine" },
   TabLineFill                = { fg = "NONE", bg = "NONE" },
-  TabLine                    = { fg = p.gruber_darker_grey_custom, bg = "NONE" },
+  TabLine                    = { fg = p.gruber_darker_bg_p3, bg = "NONE" },
   TabLineSel                 = { fg = p.gruber_darker_quartz, bg = p.gruber_darker_bg_p1 },
   Pmenu                      = { link = "Normal" },
   PmenuSel                   = { bg = p.gruber_darker_bg_p3 },
