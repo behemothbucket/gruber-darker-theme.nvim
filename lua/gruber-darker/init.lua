@@ -144,6 +144,10 @@ local highlight_groups = {
   OilDir                     = { link = "Directory" },
   --Mason
   MasonHeader                = { link = "StatusLine" },
+  --Illuminate
+  IlluminatedWordText        = { guibg = p.gruber_darker_bg_p1, gui = "NONE" },
+  IlluminatedWordRead        = { guibg = p.gruber_darker_bg_p1, gui = "NONE" },
+  IlluminatedWordWrite       = { guibg = p.gruber_darker_bg_p1, gui = "NONE" },
 }
 
 function M.setup()
