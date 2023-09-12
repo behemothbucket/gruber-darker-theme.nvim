@@ -109,6 +109,8 @@ local highlight_groups = {
   ["@conditional"]           = { link = "Conditional" },
   ["@exception"]             = { link = "Exception" },
   ["javaScriptIdentifier"]   = { link = "Keyword" },
+  ["javaScriptGlobal"]       = { link = "Keyword" },
+  ["javaScriptMember"]       = { link = "Function" },
   ["markdownCodeBlock"]      = { link = "String" },
   ["markdownCodeDelimiter"]  = { link = "Keyword" },
   -- Diff
