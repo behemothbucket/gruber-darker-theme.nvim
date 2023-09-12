@@ -80,7 +80,7 @@ local highlight_groups = {
   Variable                   = { fg = p.gruber_darker_fg_1 },
   Tag                        = { link = "SpecialChar" },
   Todo                       = { fg = p.todo_fg, bg = p.todo_bg },
-  Type                       = { fg = p.gruber_darker_quartz },
+  Type                       = { fg = p.gruber_darker_yellow_custom },
   Typedef                    = { link = "Type" },
   ["@text.todo"]             = { fg = p.todo_fg, bg = p.todo_bg },
   ["@text.note"]             = { fg = p.note_fg, bg = p.note_bg },
