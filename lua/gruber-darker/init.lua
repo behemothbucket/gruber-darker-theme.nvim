@@ -81,7 +81,7 @@ local highlight_groups = {
   Tag                        = { link = "SpecialChar" },
   Todo                       = { fg = p.todo_fg, bg = p.todo_bg },
   Type                       = { link = "Normal" },
-  Typedef                    = { fg = p.gruber_darker_yellow_custom },
+  Typedef                    = { fg = "Normal" },
   ["@text.todo"]             = { fg = p.todo_fg, bg = p.todo_bg },
   ["@text.note"]             = { fg = p.note_fg, bg = p.note_bg },
   ["@text.warning"]          = { fg = p.warning_fg, bg = p.gruber_darker_yellow_custom_m1 },
