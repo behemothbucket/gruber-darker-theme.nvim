@@ -108,6 +108,9 @@ local highlight_groups = {
   ["@punctuation.bracket"]   = { link = "Normal" },
   ["@conditional"]           = { link = "Conditional" },
   ["@exception"]             = { link = "Exception" },
+  ["javaScriptIdentifier"]   = { link = "Keyword" },
+  ["markdownCodeBlock"]      = { link = "String" },
+  ["markdownCodeDelimeter"]  = { link = "Keyword" },
   -- Diff
   DiffAdd                    = { fg = "NONE", bg = p.gruber_darker_green_custom_m1 },
   DiffAdded                  = { fg = p.gruber_darker_green_custom, bg = "NONE" },
@@ -145,9 +148,9 @@ local highlight_groups = {
   --Mason
   MasonHeader                = { link = "StatusLine" },
   --Illuminate
-  IlluminatedWordText        = { bg = p.gruber_darker_bg_p1,underline = false  },
-  IlluminatedWordRead        = { bg = p.gruber_darker_bg_p1,underline = false  },
-  IlluminatedWordWrite       = { bg = p.gruber_darker_bg_p1,underline = false  },
+  IlluminatedWordText        = { bg = p.gruber_darker_bg_p1, underline = false },
+  IlluminatedWordRead        = { bg = p.gruber_darker_bg_p1, underline = false },
+  IlluminatedWordWrite       = { bg = p.gruber_darker_bg_p1, underline = false },
 }
 
 function M.setup()

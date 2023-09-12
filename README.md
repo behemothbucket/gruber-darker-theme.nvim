@@ -11,10 +11,6 @@ Theme is not fully completed.
 
 ![JavaScript](https://i.ibb.co/fxpSFXp/javascript.png)
 
-### Lua (Windows Terminal, without Bold font)
-
-![Lua](https://i.ibb.co/bB66HsV/image.png)
-
 ## Bash (Linux, yellow keywords are bold)
 
 ![Bash](https://i.ibb.co/JcxNMs5/image.png)
