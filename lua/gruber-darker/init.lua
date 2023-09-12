@@ -110,7 +110,7 @@ local highlight_groups = {
   ["@exception"]             = { link = "Exception" },
   ["javaScriptIdentifier"]   = { link = "Keyword" },
   ["markdownCodeBlock"]      = { link = "String" },
-  ["markdownCodeDelimeter"]  = { link = "Keyword" },
+  ["markdownCodeDelimiter"]  = { link = "Keyword" },
   -- Diff
   DiffAdd                    = { fg = "NONE", bg = p.gruber_darker_green_custom_m1 },
   DiffAdded                  = { fg = p.gruber_darker_green_custom, bg = "NONE" },
