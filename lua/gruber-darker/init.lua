@@ -120,6 +120,7 @@ local highlight_groups = {
   ["javaStatement"]                = { fg = p.gruber_darker_yellow, bold = false },
   ["@java.method_type_identifier"] = { fg = p.gruber_darker_yellow, bold = false },
   ["@java.type_qualifier"]         = { fg = p.gruber_darker_yellow, bold = false },
+  ["@java.class_name"]             = { link = "Normal" },
   ["markdownCodeBlock"]            = { link = "String" },
   ["markdownCodeDelimiter"]        = { link = "Keyword" },
   -- Diff
