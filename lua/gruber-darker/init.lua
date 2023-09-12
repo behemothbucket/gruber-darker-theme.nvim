@@ -116,6 +116,7 @@ local highlight_groups = {
   ["javaScriptStatement"]    = { link = "Keyword" },
   ["javaFold"]               = { fg = p.gruber_darker_yellow, bold = false },
   ["javaType"]               = { fg = p.gruber_darker_yellow, bold = false },
+  ["javaParenT"]             = { fg = p.gruber_darker_yellow, bold = false },
   ["markdownCodeBlock"]      = { link = "String" },
   ["markdownCodeDelimiter"]  = { link = "Keyword" },
   -- Diff
