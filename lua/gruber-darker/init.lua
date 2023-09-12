@@ -111,6 +111,7 @@ local highlight_groups = {
   ["javaScriptIdentifier"]   = { link = "Keyword" },
   ["javaScriptGlobal"]       = { link = "Keyword" },
   ["javaScriptMember"]       = { link = "Function" },
+  ["javaScriptStatement"]    = { link = "Keyword" },
   ["markdownCodeBlock"]      = { link = "String" },
   ["markdownCodeDelimiter"]  = { link = "Keyword" },
   -- Diff
