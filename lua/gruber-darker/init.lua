@@ -111,7 +111,7 @@ local highlight_groups = {
   ["javaScriptIdentifier"]   = { link = "Keyword" },
   ["javaScriptGlobal"]       = { link = "Keyword" },
   ["javaScriptMember"]       = { link = "Function" },
-  ["javaScriptStatement"]    = { fg = p.gruber_darker_yellow },
+  ["javaScriptStatement"]    = { fg = p.gruber_darker_yellow_custom },
   ["markdownCodeBlock"]      = { link = "String" },
   ["markdownCodeDelimiter"]  = { link = "Keyword" },
   -- Diff
