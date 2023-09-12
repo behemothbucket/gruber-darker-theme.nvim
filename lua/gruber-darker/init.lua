@@ -118,7 +118,7 @@ local highlight_groups = {
   ["javaType"]                                 = { fg = p.gruber_darker_yellow, bold = false },
   ["javaParenT"]                               = { fg = p.gruber_darker_yellow, bold = false },
   ["javaStatement"]                            = { fg = p.gruber_darker_yellow, bold = false },
-  ["@java.method_declaration.type_identifier"] = { fg = p.gruber_darker_yellow, bold = false },
+  ["@java.type_identifier"] = { fg = p.gruber_darker_yellow, bold = false },
   ["markdownCodeBlock"]                        = { link = "String" },
   ["markdownCodeDelimiter"]                    = { link = "Keyword" },
   -- Diff
