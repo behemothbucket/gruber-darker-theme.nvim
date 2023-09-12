@@ -34,7 +34,7 @@ local highlight_groups = {
   TabLineFill                = { fg = p.gruber_darker_grey_custom, bg = p.gruber_darker_bg },
   TabLine                    = { fg = p.gruber_darker_grey_custom, bg = p.gruber_darker_bg },
   TabLineSel                 = { fg = p.gruber_darker_quartz, bg = p.gruber_darker_bg_p1 },
-  Pmenu                      = { fg = p.gruber_darker_fg, bg = p.gruber_darker_bg_p1 },
+  Pmenu                      = { fg = p.gruber_darker_grey_custom, bg = p.gruber_darker_bg },
   PmenuSel                   = { bg = p.gruber_darker_bg_p3 },
   PmenuThumb                 = { bg = p.gruber_darker_grey_custom },
   PmenuSbar                  = { bg = p.gruber_darker_bg_p1 },
