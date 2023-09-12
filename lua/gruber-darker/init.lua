@@ -112,6 +112,7 @@ local highlight_groups = {
   ["javaScriptIdentifier"]   = { link = "Keyword" },
   ["javaScriptGlobal"]       = { link = "Keyword" },
   ["javaScriptMember"]       = { link = "Function" },
+  ["javaScriptNumber"]       = { fg = p.gruber_darker_niagara },
   ["javaScriptStatement"]    = { link = "Keyword" },
   ["markdownCodeBlock"]      = { link = "String" },
   ["markdownCodeDelimiter"]  = { link = "Keyword" },
