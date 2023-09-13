@@ -111,7 +111,7 @@ local highlight_groups = {
   ["@exception"]           = { link = "Exception" },
   --LSP
   ["@lsp.type.interface"]  = { fg = p.gruber_darker_yellow },
-  ["@lsp.type.property"]  = { fg = p.gruber_darker_niagara_m1 },
+  ["@lsp.type.property.java"]  = { fg = p.gruber_darker_niagara_m1 },
   --Java
   ["javaStatement"]        = { link = "Keyword" },
   -- Diff
