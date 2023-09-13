@@ -80,7 +80,7 @@ local highlight_groups = {
   Variable                 = { fg = p.gruber_darker_fg_1 },
   Tag                      = { link = "SpecialChar" },
   Todo                     = { fg = p.todo_fg, bg = p.todo_bg },
-  Type                     = { fd = p.gruber_darker_yellow },
+  Type                     = { fg = p.gruber_darker_yellow },
   Typedef                  = { link = "Normal" },
   ["luaTable"]             = { link = "Normal" },
   ["@text.todo"]           = { fg = p.todo_fg, bg = p.todo_bg },
