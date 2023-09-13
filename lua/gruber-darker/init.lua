@@ -60,12 +60,12 @@ local highlight_groups = {
   Define                      = { link = "Keyword" },
   Delimiter                   = { fg = p.gruber_darker_grey_custom },
   Float                       = { link = "Number" },
-  Function                    = { fg = p.gruber_darker_quartz },
+  Function                    = { fg = p.gruber_darker_niagara },
   Identifier                  = { fg = p.gruber_darker_fg_1 },
   Include                     = { link = "PreProc" },
   Keyword                     = { fg = p.gruber_darker_yellow, bold = true },
   Label                       = { link = "String" },
-  Number                      = { fg = p.gruber_darker_niagara },
+  Number                      = { link = "Normal" },
   Operator                    = { fg = p.gruber_darker_grey_fg },
   PreProc                     = { fg = p.gruber_darker_quartz },
   Repeat                      = { link = "Keyword" },
@@ -114,7 +114,7 @@ local highlight_groups = {
   -- Java
   ["javaStatement"]           = { link = "Keyword" },
   ["javaOperator"]            = { link = "Keyword" },
-  ["@lsp.type.property.java"] = { fg = p.gruber_darker_niagara },
+  ["@lsp.type.property.java"] = { fg = p.gruber_darker_quartz },
   -- Markdown
   ["markdownCodeBlock"]       = { link = "String" },
   -- Diff
