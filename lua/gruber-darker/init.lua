@@ -114,6 +114,7 @@ local highlight_groups = {
   ["@lsp.type.interface"]  = { fg = p.gruber_darker_yellow },
   --Java
   ["javaStatement"]        = { link = "Keyword" },
+  ["javaType"]             = { fg = p.gruber_darker_yellow },
   -- Diff
   DiffAdd                  = { fg = "NONE", bg = p.gruber_darker_green_custom_m1 },
   DiffAdded                = { fg = p.gruber_darker_green_custom, bg = "NONE" },
