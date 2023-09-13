@@ -101,7 +101,7 @@ local highlight_groups = {
   ["@label"]                       = { link = "String" },
   ["@variable"]                    = { link = "Variable" },
   ["@type"]                        = { link = "Type" },
-  ["@type.builtin"]                = { link = "Keyword" },
+  ["@type.builtin"]                = { link = "Normal" },
   ["@constant"]                    = { link = "Constant" },
   ["@variable.builtin"]            = { link = "Type" },
   ["@operator"]                    = { fg = p.gruber_darker_grey_custom },
