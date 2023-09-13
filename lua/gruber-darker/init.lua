@@ -117,7 +117,9 @@ local highlight_groups = {
   ["@lsp.type.property.java"]                         = { fg = p.gruber_darker_quartz },
   -- JavaScript
   ["javaScriptIdentifier"]                            = { link = "Keyword" },
+  ["javaScriptFunction"]                              = { link = "Keyword" },
   ["@lsp.mod.defaultLibrary.javascript"]              = { link = "Keyword" },
+  ["@lsp.type.funciton.javascript"]                   = { link = "Function" },
   ["@lsp.typemod.property.defaultLibrary.javascript"] = { fg = p.gruber_darker_quartz },
   ["@lsp.typemod.member.defaultLibrary.javascript"]   = { fg = p.gruber_darker_niagara },
   -- Markdown
