@@ -60,7 +60,7 @@ local highlight_groups = {
   Define                   = { link = "Keyword" },
   Delimiter                = { fg = p.gruber_darker_grey_custom },
   Float                    = { link = "Number" },
-  Function                 = { link = "Normal" },
+  Function                 = { fg = p.gruber_darker_quartz },
   Identifier               = { fg = p.gruber_darker_fg_1 },
   Include                  = { link = "PreProc" },
   Keyword                  = { fg = p.gruber_darker_yellow, bold = true },
@@ -80,7 +80,7 @@ local highlight_groups = {
   Variable                 = { fg = p.gruber_darker_fg_1 },
   Tag                      = { link = "SpecialChar" },
   Todo                     = { fg = p.todo_fg, bg = p.todo_bg },
-  Type                     = { link = "Normal" },
+  Type                     = { fd = p.gruber_darker_yellow },
   Typedef                  = { link = "Normal" },
   ["luaTable"]             = { link = "Normal" },
   ["@text.todo"]           = { fg = p.todo_fg, bg = p.todo_bg },
@@ -110,11 +110,9 @@ local highlight_groups = {
   ["@conditional"]         = { link = "Conditional" },
   ["@exception"]           = { link = "Exception" },
   --LSP
-  ["@lsp.mod.constructor"] = { fg = p.gruber_darker_yellow },
   ["@lsp.type.interface"]  = { fg = p.gruber_darker_yellow },
   --Java
   ["javaStatement"]        = { link = "Keyword" },
-  ["javaType"]             = { fg = p.gruber_darker_quartz },
   -- Diff
   DiffAdd                  = { fg = "NONE", bg = p.gruber_darker_green_custom_m1 },
   DiffAdded                = { fg = p.gruber_darker_green_custom, bg = "NONE" },
