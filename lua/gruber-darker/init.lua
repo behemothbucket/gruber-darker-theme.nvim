@@ -118,6 +118,7 @@ local highlight_groups = {
   -- JavaScript
   ["javaScriptIdentifier"]                            = { link = "Keyword" },
   ["javaScriptFunction"]                              = { link = "Keyword" },
+  ["javaScriptEmbed"]                                 = { fg = p.gruber_darker_yellow },
   ["@lsp.mod.defaultLibrary.javascript"]              = { link = "Keyword" },
   ["@lsp.type.funciton.javascript"]                   = { link = "Function" },
   ["@lsp.typemod.property.defaultLibrary.javascript"] = { fg = p.gruber_darker_quartz },
