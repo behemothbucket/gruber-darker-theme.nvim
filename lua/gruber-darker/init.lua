@@ -116,6 +116,7 @@ local highlight_groups = {
   ["javaOperator"]                                    = { link = "Keyword" },
   ["@lsp.type.property.java"]                         = { fg = p.gruber_darker_quartz },
   ["@lsp.mod.typeArgument.java"]                      = { fg = p.gruber_darker_quartz },
+  ["@lsp.typemod.class.readonly.java"]                = { fg = p.gruber_darker_quartz },
   -- JavaScript
   ["javaScriptIdentifier"]                            = { link = "Keyword" },
   ["javaScriptFunction"]                              = { link = "Keyword" },
