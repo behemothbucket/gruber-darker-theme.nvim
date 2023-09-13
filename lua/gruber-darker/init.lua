@@ -113,6 +113,7 @@ local highlight_groups = {
   ["@lsp.type.interface"]     = { fg = p.gruber_darker_yellow },
   -- Java
   ["javaStatement"]           = { link = "Keyword" },
+  ["javaOperator"]            = { link = "Keyword" },
   ["@lsp.type.property.java"] = { fg = p.gruber_darker_niagara },
   -- Markdown
   ["markdownCodeBlock"]       = { link = "String" },
