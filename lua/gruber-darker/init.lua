@@ -60,7 +60,7 @@ local highlight_groups = {
   Define                   = { link = "Keyword" },
   Delimiter                = { fg = p.gruber_darker_grey_custom },
   Float                    = { link = "Number" },
-  Function                 = { fg = p.gruber_darker_quartz },
+  Function                 = { link = "Normal" },
   Identifier               = { fg = p.gruber_darker_fg_1 },
   Include                  = { link = "PreProc" },
   Keyword                  = { fg = p.gruber_darker_yellow, bold = true },
@@ -114,7 +114,7 @@ local highlight_groups = {
   ["@lsp.type.interface"]  = { fg = p.gruber_darker_yellow },
   --Java
   ["javaStatement"]        = { link = "Keyword" },
-  ["javaType"]             = { fg = p.gruber_darker_yellow },
+  ["javaType"]             = { fg = p.gruber_darker_quartz },
   -- Diff
   DiffAdd                  = { fg = "NONE", bg = p.gruber_darker_green_custom_m1 },
   DiffAdded                = { fg = p.gruber_darker_green_custom, bg = "NONE" },
